@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
 
     $('.menu').on('mouseover', function() {
         $('.overlay').show();
@@ -6,5 +6,5 @@ $(function() {
     $('.menu').on('mouseout', function() {
         $('.overlay').hide();
     });
-    
+
 });

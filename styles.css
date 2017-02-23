@@ -5,7 +5,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Chathura', sans-serif;
-    background: url(img/ethan_walking.jpg) no-repeat center center fixed;
+    background: url(img/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -20,7 +20,7 @@
     left: 0;
     right: 0;
     opacity: .5;
-	background: url(img/ethan_walking.jpg) no-repeat center center fixed;
+	background: url(img/background.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -73,11 +73,19 @@
   }
 
 #water_theme {
-	background: url(img/all_elements.jpg) no-repeat center center fixed;
+	background: url(img/ethan_walking.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+.nation {
+	position: fixed;
+	bottom: 1em;
+	right: 2em;
+	color: #fff;
+	font-size: 2em;
 }
 
 nav {
@@ -122,21 +130,21 @@ nav:hover a:hover {
 }
 
 #fire:hover {
-	background: rgba(73, 36, 40, 0.5);
+	background: rgba(102, 15, 31, 0.7);
 	transition: all 1.5s ease-in-out;
 }
 
 #water:hover {
-	background: rgba(26, 47, 83, 0.5);
+	background: rgba(26, 47, 83, 0.7);
 	transition: all 1.5s ease-in-out;
 }
 
 #air:hover {
-	background: rgba(172, 181, 196, 0.5);
+	background: rgba(172, 181, 196, 0.7);
 	transition: all 1.5s ease-in-out;
 }
 
 #earth:hover {
-	background: rgba(49, 58, 54, 0.5);
+	background: rgba(91, 102, 74, 0.7);
 	transition: all 1.5s ease-in-out;
 }

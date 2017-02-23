@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
-    $('.menu').on('mouseover', function() {
+    $('a').on('mouseover', function() {
         $('.overlay').show();
     });
-    $('.menu').on('mouseout', function() {
+    $('a').on('mouseout', function() {
         $('.overlay').hide();
     });
 

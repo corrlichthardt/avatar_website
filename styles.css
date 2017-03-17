@@ -6,6 +6,7 @@
 	padding: 0;
 	font-family: 'Chathura', sans-serif;
     background: url(img/background.jpg) no-repeat center center fixed;
+	background-position: right;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -21,26 +22,20 @@
     right: 0;
     opacity: .5;
 	background: url(img/background.jpg) no-repeat center center fixed;
+	background-position: right;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	-webkit-animation: blur 0.5s linear forwards;
+	-webkit-animation: blur 0.5s linear;
     -moz-animation: blur 0.5s linear forwards;
     -ms-animation: blur 0.5s linear forwards;
     -o-animation: blur 0.5s linear forwards;
     animation: blur 0.5s linear forwards;
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-	-o-animation-delay: 1s;
-    animation-delay: 1s;
-  }
-
-  .delay {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    -o-animation-delay: 1s;
-    animation-delay: 1s;
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+	-o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
   }
 
   @-webkit-keyframes blur {
@@ -110,6 +105,7 @@ nav a {
 	transition: opacity 1s;
 	opacity: 1;
 	margin: 0.8em;
+	transition: all 1s ease-in-out;
 }
 
 nav a img {
@@ -131,20 +127,30 @@ nav:hover a:hover {
 
 #fire:hover {
 	background: rgba(102, 15, 31, 0.7);
-	transition: all 1.5s ease-in-out;
 }
 
 #water:hover {
 	background: rgba(26, 47, 83, 0.7);
-	transition: all 1.5s ease-in-out;
 }
 
 #air:hover {
 	background: rgba(172, 181, 196, 0.7);
-	transition: all 1.5s ease-in-out;
 }
 
 #earth:hover {
 	background: rgba(91, 102, 74, 0.7);
-	transition: all 1.5s ease-in-out;
+}
+
+@media screen and (max-width: 1084px) and (min-width: 540px) {
+	body nav {
+		top: 18%;
+		margin-top: -18px;
+	}
+}
+
+@media screen and (max-width: 540px) and (min-width: 0px) {
+	body nav {
+		top: 0%;
+		margin-top: 0px;
+	}
 }

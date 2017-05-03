@@ -1,3 +1,7 @@
+
+/* startpage background
+----------------------------------------*/
+
 .startpage {
 	display: block;
 	width: 100%;
@@ -67,90 +71,196 @@
     }
   }
 
-#water_theme {
-	background: url(img/ethan_walking.jpg) no-repeat center center fixed;
+  /* to the ...
+  ----------------------------------------*/
+
+  .nation {
+  	position: fixed;
+  	bottom: 1em;
+  	right: 2em;
+  	color: #fff;
+  	font-size: 2em;
+  }
+
+
+  /* startpage menu
+  ----------------------------------------*/
+
+  nav {
+  	display: block;
+  	text-align: center;
+  	width: 100%;
+  	position: absolute;
+  	top: 38%;
+  	margin-top: -38px;
+  }
+
+  nav a {
+  	position: relative;
+  	display: inline-block;
+  	font-size: 3em;
+  	text-decoration: none;
+  	color: #fff;
+  	width: 4em;
+  	height: 4em;
+  	border-radius: 100%;
+  	overflow: hidden;
+  	transition: opacity 1s;
+  	opacity: 1;
+  	margin: 0.8em;
+  	transition: all 1s ease-in-out;
+  }
+
+  nav a img {
+  	width: 50%;
+  	position: absolute;
+  	top: 25%;
+  	left: 50%
+  	margin-top: -25px;
+  	margin-left: -50px;
+  }
+
+  nav:hover a {
+  	opacity: 0.25;
+  }
+
+  nav:hover a:hover {
+  	opacity: 1;
+  }
+
+  #fire:hover {
+  	background: rgba(102, 15, 31, 0.7);
+  }
+
+  #water:hover {
+  	background: rgba(26, 47, 83, 0.7);
+  }
+
+  #air:hover {
+  	background: rgba(172, 181, 196, 0.7);
+  }
+
+  #earth:hover {
+  	background: rgba(91, 102, 74, 0.7);
+  }
+
+  @media screen and (max-width: 1084px) and (min-width: 540px) {
+  	body nav {
+  		top: 18%;
+  		margin-top: -18px;
+  	}
+  }
+
+  @media screen and (max-width: 540px) and (min-width: 0px) {
+  	body nav {
+  		top: 0%;
+  		margin-top: 0px;
+  	}
+  }
+
+  /* cast
+  ----------------------------------------*/
+
+#cast {
+	background: url(img/all_elements.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 
-.nation {
-	position: fixed;
-	bottom: 1em;
-	right: 2em;
-	color: #fff;
-	font-size: 2em;
+  /* air theme
+  ----------------------------------------*/
+
+#air_theme {
+	background: url(img/air_background.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-nav {
-	display: block;
-	text-align: center;
+/* fire theme
+----------------------------------------*/
+
+#fire_theme {
+	background: url(img/fire_background.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* earth theme
+----------------------------------------*/
+
+#earth_theme {
+	background: url(img/earth_background.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* water theme
+----------------------------------------*/
+
+#water_theme {
+	background: url(img/water_background.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* credits png
+----------------------------------------*/
+
+.wrappercredits {
 	width: 100%;
-	position: absolute;
-	top: 38%;
-	margin-top: -38px;
 }
 
-nav a {
-	position: relative;
-	display: inline-block;
-	font-size: 3em;
-	text-decoration: none;
-	color: #fff;
-	width: 4em;
-	height: 4em;
-	border-radius: 100%;
-	overflow: hidden;
-	transition: opacity 1s;
-	opacity: 1;
-	margin: 0.8em;
+.credits {
+	width: 1000px;
+	display: table;
+    margin: 0 auto;
+	padding-top: 24.5em;
+}
+
+/* elements menu
+----------------------------------------*/
+
+.navbar {
+	font-family: 'Chathura', sans-serif;
+	margin-top: 1.5em;
+	width: 50%;
+}
+
+.navbar a {
 	transition: all 1s ease-in-out;
 }
 
-nav a img {
-	width: 50%;
-	position: absolute;
-	top: 25%;
-	left: 50%
-	margin-top: -25px;
-	margin-left: -50px;
+.navbar ul {
+	padding: 0;
+	list-style: none;
+	display: flex;
 }
 
-nav:hover a {
+.navbar ul li {
+	margin: 0px 2.5em;
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	font-size: 30px;
+	color: white;
+}
+
+
+.navbar ul:hover li a {
 	opacity: 0.25;
 }
 
-nav:hover a:hover {
+.navbar ul:hover li a:hover {
 	opacity: 1;
-}
-
-#fire:hover {
-	background: rgba(102, 15, 31, 0.7);
-}
-
-#water:hover {
-	background: rgba(26, 47, 83, 0.7);
-}
-
-#air:hover {
-	background: rgba(172, 181, 196, 0.7);
-}
-
-#earth:hover {
-	background: rgba(91, 102, 74, 0.7);
-}
-
-@media screen and (max-width: 1084px) and (min-width: 540px) {
-	body nav {
-		top: 18%;
-		margin-top: -18px;
-	}
-}
-
-@media screen and (max-width: 540px) and (min-width: 0px) {
-	body nav {
-		top: 0%;
-		margin-top: 0px;
-	}
 }

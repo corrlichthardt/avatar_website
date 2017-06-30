@@ -1,1 +1,0 @@
-http://stackoverflow.com/questions/21094583/how-change-background-image-with-javascript-onclick-on-a-link
